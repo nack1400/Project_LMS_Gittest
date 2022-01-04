@@ -1,0 +1,85 @@
+body{
+    font-size:18px;
+}
+
+#mainDiv{
+    width:660px;
+    height:660px;
+    margin:100px auto;
+    padding:5px;
+    position:relative;
+}
+
+#mainDiv div{
+    border-top:4px solid rgb(6, 0, 88);
+    width:300px;
+    height:300px;
+    position:absolute;
+}
+
+#mainDiv #div1 h4{
+    display:block;
+    height:50px;
+    margin-top:0px;
+    line-height:50px;
+    background:#e6e6e6;
+    padding-left:10px;
+}
+
+#mainDiv #div1 ul li{
+    padding-left:0px;
+}
+
+#mainDiv #div1 ul li a{
+    text-decoration:none;
+    display:block;
+    width:100%;
+    color:black;
+}
+
+#mainDiv #div1 ul li a:hover{
+    background:#e6e6e6;
+}
+
+#mainDiv #div1{
+    top:20px;
+    left:20px;
+}
+
+#mainDiv #div2{
+    top:20px;
+    left:340px;
+}
+#mainDiv #div3{
+    top:340px;
+    left:20px
+}
+#mainDiv #div4{
+    top:340px;
+    left:340px;
+}
+
+#mainDiv #div1 ul{
+    width:100%;
+    list-style:none;
+    padding:0px;
+}
+
+#mainDiv #div1 ul li{
+    border-bottom:1px solid black;
+    font-size:22px;
+    padding-left:5px;
+}
+
+#mainDiv .menuBtn{
+    width:100%;
+    height:100%;
+    border:none;
+    cursor:pointer;
+    font-size:24px;
+}
+
+#mainDiv .menuBtn:hover{
+    background:rgb(233, 233, 233);
+}
+

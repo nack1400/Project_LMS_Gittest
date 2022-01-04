@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/css/student_main.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+</head>
+<body>
+<header>
+    <h1>Project LMS</h1>
+</header>
+
+<div id="mainDiv">
+    <div id="div1">
+        <table>
+            <th:block>
+                <tr>
+                    <th> 코드 </th>
+                    <th> 강의 이름 </th>
+                    <th> 학생 수 </th>
+                </tr>
+                <tr th:each="dto:${lecture}">
+                    <td th:text="${dto.lectureCode}"></td>
+                    <td th:text="${dto.lectureName}"></td>
+                    <td th:text="${dto.numOfStudents}"></td>
+                </tr>
+            </th:block>
+        </table>
+        <button type="button">강의 바로가기 </button>
+    </div>
+    <div id="div2">
+        <button class="menuBtn" type="button" onclick="location.href='/lectureproc'">강의개설</button>
+    </div>
+    <div id="div3">
+        <button class="menuBtn" type="button">커뮤니티</button>
+    </div>
+    <div id="div4">
+        <button class="menuBtn" type="button">고객센터</button>
+    </div>
+</div>
+
+
+</body>
+</html>
