@@ -22,12 +22,12 @@ public class LoginController {
 
     @GetMapping("/")
     public String loginpage(){
-        return "/view/index.html";
+        return "view/index.html";
     }
 
     @GetMapping("/join")
     public String joinpage(){
-        return "/view/join.html";
+        return "view/join.html";
     }
 
     @PostMapping("/joinproc")
